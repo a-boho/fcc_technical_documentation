@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printing Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>3D Printing Basics</header>
+        <ul>
+          <li><a class="nav-link" href="#Intro">Introduction</a></li>
+          <li><a class="nav-link" href="#Basics_needed">Basics Needed</a></li>
+          <li><a class="nav-link" href="#Model_selection">Model Selection</a></li>
+          <li><a class="nav-link" href="#File_prep">File Preparation</a></li>
+          <li><a class="nav-link" href="#Printer_prep">Printer Preparation</a></li>
+          <li><a class="nav-link" href="#Completion">Completion!</a></li>
+        </ul>
+      </nav>
+      
+      
+      <main id="main-doc">
+        <section class="main-section" id="Intro">
+          <header>Introduction</header>
+          <article>
+            <p>
+              This document will walk you through the process of creating your first additive manufacturing project.
+            </p>
+          </article>
+        </section>
+        
+        <section class="main-section" id="Basics_needed">
+          <header>Basics Needed</header>
+          <article>
+            <p>
+              The minimum basics required to follow this guide:
+            </p>
+            <ul>
+            <li>Prusa Mk3S+</li>
+            <li>PC with SD card reader</li>
+            <li>PrusaSlicer Software installed</li>
+            <li>Desired filament for project</li>
+            <li>Filament Cutters</li>
+            <li>Paper Towels</li>
+            </ul>
+          </article>
+        </section>
+        
+        <section class="main-section" id="Model_selection">
+          <header>Model Selection</header>
+          <article>
+            <p>
+              One of the best parts of having a 3D printer is that you can create anything that you can think of.
+            </p>
+            <p>
+              Some places to start printing are:
+            </p>
+            <div>
+            <a href="https://prusaprinters.org/prints" target="_blank">
+            <button>
+              PrusaPrinters
+            </button>
+            </a>
+            </div>
+            <div>
+            <a href="https://thingiverse.com" target="_blank">
+            <button>
+              Thingiverse
+            </button>
+            </a>
+            </div>
+            <div>
+              For this tutorial, we will reference a simple model:
+            </div>
+            <a href="https://www.prusaprinters.org/prints/3116-treefrog" target="_blank">
+            <img src="https://cdn.thingiverse.com/renders/11/b5/db/fb/d0/treefrog_45_cut_preview_featured.jpg" alt="prusaprinters.org">
+            </a>
+          </article>
+        </section>
+      
+        <section class="main-section" id="File_prep">
+          <header>File Preparation</header>
+          <article>
+            <ul>
+              <li>Start by downloading the model .STL file to a safe place on your PC.</li>
+              <li>Next we will open the PrusaSlicer software and open the file we downloaded.</li>
+              <li>Set the print quality setting to the desired choice.</li>
+              <li>Set the filament to the correct type to match what you are using.</li>
+              <li>Some basic notes for print settings:
+                <ul>
+                  <li>Infill is how dense the part will be. Generally it is best to use the lowest value that will still support the top features of the part.</li>
+                  <li>A brim will help to keep the part from lifting from the print bed, especially if it has sharp corners. </li>
+                  <li>Layer height will affect the detail of the part as well as the printing time.
+                      <ul>
+                          <li>0.05mm - Super Fine</li>
+                          <li>0.10mm - Fine</li>
+                          <li>0.15mm - Balanced</li>
+                          <li>0.20mm - Strong & Thick</li>
+                          <li>0.25mm - Draft</li>
+                      </ul>
+                  </li>
+                  <li>Perimeters are what give 3D printed parts their strength. Two is minimum for visual parts, three is standard, and up to six is for high strength parts.</li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+        </section>
+      
+      <section class="main-section" id="Printer_prep">
+          <header>Printer Preparation</header>
+          <article>
+            <p>
+              Start by powering up your machine. Select the filament that you will be using, this should match what was selected in your print settings.
+              Clip the end of the filament to make a 45 degree point for easy loading. Use the printer's menu to warm up the extruder to the proper temperature
+              of your filament. As this is happening, clean the print bed with warm water and dish soap to remove finger oils from the plate. Dry the plate
+              and do not touch again with your bare hands. Replace the plate back onto the printer and load the new filament into the hot extruder. Once the filament
+              is loaded, you are ready to start printing your part. Load the SD card with the .gcode file into the printer, use the printers' menu to navigate to the
+              correct file and hit start!
+            </p>
+          </article>
+      </section>
+      
+      
+      <section class="main-section" id="Completion">
+          <header>Completion!</header>
+          <article>
+            <p>
+              In a short time you will have a completed part if all goes well.
+              <div>
+              <img src="https://blog.prusaprinters.org/wp-content/uploads/2020/10/zaba-1024x683.jpg" alt="prusaprinters.org">
+              </div>
+            </p>
+          </article>
+      </section>
+      </main>
+</body>
+</html>
